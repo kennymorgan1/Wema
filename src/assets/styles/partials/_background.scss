@@ -1,0 +1,43 @@
+@import "../partials/variables";
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-primary-light {
+  background-color: $primary-light !important;
+}
+.bg-primary-dark {
+  background-color: $primary-dark !important;
+}
+.bg-secondary {
+  background-color: $secondary !important;
+}
+.bg-grey {
+  background-color: $gray !important;
+}
+
+.bg-dark{
+  background-color: $gray-darken !important;
+
+}
+
+.bg-primary-light {
+  background-color: $primary-light !important;
+}
+
+.cursor {
+  cursor: pointer !important;
+}
+
+.divider-muted {
+  border: 0.06rem solid $gray;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.divider-primary {
+  border: 0.06rem solid $primary;
+  opacity: 0.2;
+  width: 100%;
+}

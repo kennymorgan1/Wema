@@ -1,0 +1,74 @@
+@import "./variables";
+
+.home__new-trade {
+  padding: 2.4rem 3.2rem;
+  width: 100%;
+  min-height: 18.6rem; 
+  background-color: $white;
+  border-radius: 8px;
+}
+
+.home__new-trade .inner__container {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-light;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.home__new-trade .inner__container img {
+    width: 9.27rem;
+    height: 11.2rem;
+  }
+  
+  .home__draft {
+    height: 14.4rem;
+  }
+
+.traction-card {
+  height: 60vh;
+  width: 23vw;
+  border-radius: 60px 60px 0px 60px;
+  padding: 2rem;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  position: relative;
+}
+
+.traction-card-left {
+
+  border-radius: 60px 60px 60px 0px;
+}
+
+.traction-card-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+@media (max-width: 1024px) {
+  .traction-card {
+      width: 90vw;
+      padding: 3rem;
+  }
+}
+
+
+
+
+
+
+
+
+  
+  @media (min-width: 1024px) {
+    .home__new-trade .inner__container {
+      flex-direction: row;
+      padding: 2rem 1rem;
+    }
+  }
+  

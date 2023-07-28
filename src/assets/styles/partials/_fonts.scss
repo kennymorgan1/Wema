@@ -1,0 +1,22 @@
+*:not(path, svg) {
+    font-family: 'Cabinet Grotesk', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+small {
+    font-size: 14px;
+}
+
+[role$="alert"] {
+    color: currentColor;
+}
+
+b {
+    font-weight: 600;
+}
+
+.ant-spin-dot {
+    font-size: 12px;
+}

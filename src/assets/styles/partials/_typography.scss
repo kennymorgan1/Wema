@@ -1,0 +1,108 @@
+@import "../partials/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.1;
+  // margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.text-lg {
+  font-size: 1.6rem;
+}
+
+.font-extrabold{
+  font-weight: 600;
+}
+.font-bold{
+  font-weight: 500;
+}
+
+.text-hover:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(#FFEB35, #19FD82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.padding-none {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 1.999rem;
+  }
+  h5 {
+    font-size: 1.414rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+.primary-text {
+  color: $primary;
+}
+
+.primary-text-light {
+  color: $primary-light;
+}
+
+.text-dark{
+  color: #0D470D;
+}
+.text-grey {
+  color: $gray;
+}
+.text-muted{
+  color: rgba(255, 255, 255, 0.5);
+}
+small {
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  small {
+    font-size: 80%;
+  }
+}

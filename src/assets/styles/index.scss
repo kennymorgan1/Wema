@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/jkv5qjh.css");
+
+#root {
+  margin-top: 0;
+  background: #f5f6f8;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  color: #23143f !important;
+}
+@import "./partials/header";
+@import "./partials/variables";
+@import "./partials/products";
+
+@import "./partials/fonts";
+
+@import "./partials/animations";
+@import "./partials/position";
+
+@import "./partials/home";
+@import "./partials/horizontalScroll";
+@import "./partials/_typography";
+@import "./partials/_nav";
+@import "./partials/_background";
+@import "./partials/_buttons.scss";

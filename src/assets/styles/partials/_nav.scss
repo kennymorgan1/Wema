@@ -1,0 +1,146 @@
+@import "../partials/variables";
+
+.nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 1rem;
+  position: fixed;
+  z-index: 1;
+  width: 80%;
+  margin-left: 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  margin: 0.5rem 2rem;
+  border-bottom: 1px dashed lightgrey;
+  list-style: none !important;
+  cursor: pointer;
+  transition: all 0.15s;
+  padding-bottom: 1rem;
+  padding-left: 1.4rem;
+}
+
+.nav__item:hover,
+.nav__item.active {
+  border-bottom: 3px solid $primary;
+  color: $primary;
+}
+
+.nav__brand {
+  width: auto;
+  height: 5.3rem;
+  object-fit: contain;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.15s;
+  padding-left: 0 !important;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.nav__toggler {
+  margin-right: 2rem;
+  /*opacity: 0.5;*/
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  /*opacity: 1;*/
+  border-radius: 5px;
+}
+
+.navigation .settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px dotted $primary-light;
+  background: #faf4ff;
+  border-radius: 8px;
+  min-width: 15rem;
+  cursor: pointer;
+}
+
+.navigation .settings img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.nav__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__account .user-container {
+  width: 4.9rem;
+  height: 5rem;
+  border-radius: 15px;
+  //background-color: $primary-light;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-container {
+  width: 4.9rem;
+  height: 5rem;
+  border-radius: 15px;
+  //background-color: $primary-light;
+  background-color: $secondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav__brand {
+    width: 11.1rem;
+  }
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+    padding-bottom: 0.3rem;
+  }
+  .nav__item {
+    border: 0;
+  }
+
+  .collapsible--expanded {
+    justify-content: flex-end;
+    width: calc(100% - 270px);
+  }
+  .collapsible--collapsed {
+    justify-content: space-between;
+    width: calc(100% - 5%);
+  }
+  .nav {
+    padding: 1rem 4rem;
+    width: 78%;
+  }
+}

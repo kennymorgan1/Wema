@@ -1,0 +1,76 @@
+@import "./variables";
+
+
+
+.btn {
+  padding: 15px 45px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #8807F7;
+}
+
+.btn-secondary {
+  border: 1px solid #6005AE;
+  color: #6005AE;
+}
+
+.btn-white {
+  background-color: #FFFFFF;
+  color: #8807F7;
+}
+
+.btn-transparent {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.btn-transparent:hover {
+  background-color: #FFFFFF;
+  color: #8807F7;
+}
+
+.btn-white {
+  background-color: #FFFFFF;
+  color: #8807F7;
+}
+
+.btn-primary:hover {
+  background-color: #6005AE;
+}
+
+.btn-white:hover {
+  background-color: #8807F7;
+  color: #FFFFFF;
+}
+
+.btn-secondary:hover  {
+  background-color: #6005AE;
+  color: #FFFDF2;
+}
+
+.filter_btn {
+  background: $secondary;
+  border-radius: 4px;
+  width: 137px;
+  height: 57px;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 24px 7px 16px;
+  color: $primary;
+}
+
+.primary_icon {
+  color: $primary;
+}
+
+.ant-btn-ghost {
+  background: #80ed1a !important;
+  border-color: #80ed1a !important;
+  color: #116411 !important;
+}
+
+
